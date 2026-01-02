@@ -1,7 +1,7 @@
 # Raspberry Pi Home Lab
 
 ## Description
-This project documents the setup of a home lab on a Raspberry Pi, using Docker containers, Pi-hole and PiVPN.
+This project documents the setup of a home lab on a Raspberry Pi, using Docker containers, Pi-hole (network-wide ad blocker) and PiVPN.
 
 ## Goals
 - DNS filtering with Pi-hole
