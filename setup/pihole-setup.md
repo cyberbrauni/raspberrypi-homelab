@@ -48,6 +48,11 @@ As you can see on the image above, Pi-hole was working, but not blocking. If tha
 - Flush DNS cache after changing settings
 - IPv6 may bypass Pi-hole; configure Pi-hole IPv6 or disable on devices if needed (specifically on PC)
 
+**Root cause:**
+- Devices were using secondary DNS servers (1.1.1.1 / 8.8.8.8)
+- IPv6 DNS was bypassing Pi-hole
+- Randomized MAC addresses caused devices not to appear in DHCP leases
+
 ## Pi-Hole Dashboard (After Troubleshooting)
 
 ![Pi-hole Dashboard After](../images/pihole-dashboard-queries.PNG)
