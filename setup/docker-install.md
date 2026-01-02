@@ -12,5 +12,8 @@ Docker is used for service isolation (Pi-hole, PiVPN) and easier system manageme
 The docker-compose-plugin package was not available via apt on Raspberry Pi OS.
 Installed docker-compose instead.
 
+## Docker Compose Running
+![Docker Compose](../images/docker-compose.PNG)
+
 ## Notes 
 - System restart after installation
