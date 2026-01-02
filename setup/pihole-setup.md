@@ -23,3 +23,7 @@
 ## Verification
 Web interface is accessible via http://<raspberrypi_IP>/admin
 - can log in using newly set password
+
+## Pi-Hole Dashboard
+
+![Pi-hole Dashboard](../images/pihole-dashboard.PNG)
