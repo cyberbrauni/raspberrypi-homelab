@@ -1,5 +1,11 @@
 # Pi-hole Setup
 
+![Status](https://img.shields.io/badge/status-in%20progress-yellow)
+![Platform](https://img.shields.io/badge/platform-Raspberry%20Pi-red)
+![Docker](https://img.shields.io/badge/docker-Docker%20Compose-blue)
+![Service](https://img.shields.io/badge/service-Pi--hole-yellow)
+![Network](https://img.shields.io/badge/network-DNS%20Filtering-green)
+
 This document describes how to deploy and configure Pi-hole on a Raspberry Pi using Docker Compose for network-wide ad blocking.
 
 ## Requirements
