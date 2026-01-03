@@ -1,10 +1,10 @@
 # Pi-hole Setup
 
-![Status](https://img.shields.io/badge/status-in%20progress-yellow)
-![Platform](https://img.shields.io/badge/platform-Raspberry%20Pi-red)
-![Docker](https://img.shields.io/badge/docker-Docker%20Compose-blue)
-![Service](https://img.shields.io/badge/service-Pi--hole-yellow)
-![Network](https://img.shields.io/badge/network-DNS%20Filtering-green)
+![Status](https://img.shields.io/badge/Status-Finished-success)
+![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi-red)
+![Docker](https://img.shields.io/badge/Docker-Docker%20Compose-blue)
+![Service](https://img.shields.io/badge/Service-Pi--hole-yellow)
+![Network](https://img.shields.io/badge/Network-DNS%20Filtering-green)
 
 This document describes how to deploy and configure Pi-hole on a Raspberry Pi using Docker Compose for network-wide ad blocking.
 
@@ -47,6 +47,17 @@ Web interface is accessible via http://<raspberrypi_IP>/admin
 **nslookup doubleclick.net <raspberrypi_IP>**
 - Should return 0.0.0.0 if Pi-hole is working
 
+## Network Integration
+
+Pi-hole was integrated at the router level to enable network-wide ad blocking.
+
+- Router DHCP server configured to advertise Pi-hole as the **primary DNS server**
+- Pi-hole assigned a **static IP address**: "192.168.x.xx"
+- Secondary DNS servers removed to prevent DNS bypass
+- Devices automatically receive Pi-hole DNS via DHCP
+
+Manual DNS configuration was used on selected devices during testing.
+
 ## Troubleshooting Notes
 As you can see on the image above, Pi-hole was working, but not blocking. If that happens, make sure:
 - Devices use Pi-hole IP as primary DNS
@@ -62,3 +73,4 @@ As you can see on the image above, Pi-hole was working, but not blocking. If tha
 ## Pi-Hole Dashboard (After Troubleshooting)
 
 ![Pi-hole Dashboard After](../images/pihole-dashboard-queries.PNG)
+
