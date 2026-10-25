@@ -1,6 +1,6 @@
 # Raspberry Pi Home Lab
 
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi-red)
 ![Docker](https://img.shields.io/badge/Docker-Docker%20Compose-blue)
 ![Service](https://img.shields.io/badge/Service-Pi--hole-green)
