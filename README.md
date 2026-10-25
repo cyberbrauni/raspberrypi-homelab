@@ -18,30 +18,6 @@ A self-hosted homelab built on a Raspberry Pi 4 using Docker Compose. The projec
 - Remote DNS filtering: Configured VPN clients use Pi-hole for DNS queries.
 - Split-tunnel VPN: Only home-network traffic is routed through the VPN; other internet traffic uses the client's regular connection.
 
-## Hardware & Software
-
-## Architecture
-The Raspberry Pi acts as the central host for the homelab services.
-                      Remote Android Phone
-                              |
-                       Mobile Data / Wi-Fi
-                              |
-                      WireGuard VPN Tunnel
-                              |
-                        Home Router
-                              |
-                       Raspberry Pi 4
-                              |
-              +---------------+---------------+
-              |               |               |
-           Pi-hole          Samba          WireGuard
-          DNS Filtering    File Storage    VPN Server
-              |               |               |
-              +---------------+---------------+
-                              |
-                      Home Network (LAN)
-The WireGuard server accepts VPN connections over UDP port 51820. Once connected, authorized clients can reach the home LAN and access services such as Pi-hole and Samba.
-
 ## 1. Pi-hole — DNS Filtering
 
 Pi-hole provides DNS-based domain blocking for supported devices on the home network.
